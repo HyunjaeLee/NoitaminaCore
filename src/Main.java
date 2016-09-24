@@ -22,9 +22,11 @@ public class Main {
                     dir.mkdir();
                 String fileString = new StringBuilder().append(args[0]).append(File.separator).append(bigTitle).append(File.separator).append(smallTitle).append(".mp4").toString();
                 File file = new File(fileString);
-                if(!file.exists())
-                    new Download(videoUrl(smallUrl), fileString)
-                            .start();
+                if(!file.exists()) {
+                    Download download = new Download(videoUrl(smallUrl), fileString);
+                    download.setName(smallTitle);
+                    download.start();
+                }
             });
         });
 

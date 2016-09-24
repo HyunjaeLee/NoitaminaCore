@@ -30,7 +30,8 @@ public class Download extends Thread{
             rbc.close();
 
         } catch (IOException e) {
-                e.printStackTrace();
+            System.out.println(getName());
+            e.printStackTrace();
         }
 
     }
