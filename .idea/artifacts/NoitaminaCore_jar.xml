@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="NoitaminaCore:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NoitaminaCore_jar</output-path>
+    <root id="archive" name="NoitaminaCore.jar">
+      <element id="module-output" name="NoitaminaCore" />
+    </root>
+  </artifact>
+</component>
